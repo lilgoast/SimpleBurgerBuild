@@ -4108,12 +4108,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIHandler_ChangeHealth_m1CBE58DE4D1AEA02
 		int32_t L_0 = ((UIHandler_tE29858BAA543F514BB34F80A11CFA76430BA5016_StaticFields*)il2cpp_codegen_static_fields_for(UIHandler_tE29858BAA543F514BB34F80A11CFA76430BA5016_il2cpp_TypeInfo_var))->___healthAmount_11;
 		if ((((int32_t)L_0) >= ((int32_t)0)))
 		{
-			goto IL_0025;
+			goto IL_002b;
 		}
 	}
 	{
 		// levelFailed = true;
 		((UIHandler_tE29858BAA543F514BB34F80A11CFA76430BA5016_StaticFields*)il2cpp_codegen_static_fields_for(UIHandler_tE29858BAA543F514BB34F80A11CFA76430BA5016_il2cpp_TypeInfo_var))->___levelFailed_13 = (bool)1;
+		// winsInARow = 0;
+		((UIHandler_tE29858BAA543F514BB34F80A11CFA76430BA5016_StaticFields*)il2cpp_codegen_static_fields_for(UIHandler_tE29858BAA543F514BB34F80A11CFA76430BA5016_il2cpp_TypeInfo_var))->___winsInARow_18 = 0;
 		// losePanel.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___losePanel_7;
 		NullCheck(L_1);
@@ -4123,7 +4125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIHandler_ChangeHealth_m1CBE58DE4D1AEA02
 		return;
 	}
 
-IL_0025:
+IL_002b:
 	{
 		// healthUI.transform.GetChild(healthAmount).gameObject.SetActive(false);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___healthUI_4;
